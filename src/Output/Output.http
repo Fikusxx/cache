@@ -1,0 +1,21 @@
+@Output_HostAddress = http://localhost:5102
+@Key = 123
+
+GET {{Output_HostAddress}}/api/auth/first/1
+Accept: application/json
+x-api-key: {{Key}}
+
+###
+
+GET {{Output_HostAddress}}/api/auth/second/1
+Accept: application/json
+
+###
+
+DELETE {{Output_HostAddress}}/api/auth/evict?tag=first
+Accept: application/json
+
+###
+
+DELETE {{Output_HostAddress}}/api/auth/evict?tag=second
+Accept: application/json
