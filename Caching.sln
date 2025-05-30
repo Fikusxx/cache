@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheAside", "src\CacheAsid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Output", "src\Output\Output.csproj", "{98DBA930-3F59-4E7D-B2AC-ED1D8377255F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fusion", "src\Fusion\Fusion.csproj", "{64153E98-073E-4890-8AE8-BAD572FE0B31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1FDD2F42-F797-4C46-9F3A-C31D470473D4} = {3BFA5947-A904-4342-8B2D-FCF9CEC0CA6C}
 		{98DBA930-3F59-4E7D-B2AC-ED1D8377255F} = {3BFA5947-A904-4342-8B2D-FCF9CEC0CA6C}
+		{64153E98-073E-4890-8AE8-BAD572FE0B31} = {3BFA5947-A904-4342-8B2D-FCF9CEC0CA6C}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1FDD2F42-F797-4C46-9F3A-C31D470473D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -29,5 +32,9 @@ Global
 		{98DBA930-3F59-4E7D-B2AC-ED1D8377255F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98DBA930-3F59-4E7D-B2AC-ED1D8377255F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98DBA930-3F59-4E7D-B2AC-ED1D8377255F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64153E98-073E-4890-8AE8-BAD572FE0B31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64153E98-073E-4890-8AE8-BAD572FE0B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64153E98-073E-4890-8AE8-BAD572FE0B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64153E98-073E-4890-8AE8-BAD572FE0B31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
