@@ -1,5 +1,7 @@
 using CacheAside.Infra;
 using Microsoft.Extensions.Caching.Distributed;
+using StackExchange.Redis.Extensions.Core.Configuration;
+using StackExchange.Redis.Extensions.System.Text.Json;
 
 namespace CacheAside;
 
@@ -15,6 +17,17 @@ public static class DependencyInjection
             options.Configuration = builder.Configuration.GetConnectionString("Cache");
             options.InstanceName = "local-";
         });
+
+        // use redis ext asp core & text json
+        // adds IRedisDatabase
+        // builder.Services.AddStackExchangeRedisExtensions<SystemTextJsonSerializer>(sp =>
+        // {
+        //     // use sp..
+        //     return new RedisConfiguration[]
+        //     {
+        //         new() { ConnectionString = "localhost" }
+        //     };
+        // });
 
         builder.Services.AddScoped<OrderRepository>();
         builder.Services.AddScoped<IOrderRepository>(sp =>
