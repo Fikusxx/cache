@@ -24,7 +24,9 @@ public sealed class OrderRepositoryDecorator : IOrderRepository
 {
     private readonly IOrderRepository ctx;
     private readonly IDistributedCache cache;
-    private static readonly DistributedCacheEntryOptions Options = new() { SlidingExpiration = TimeSpan.FromSeconds(10) };
+
+    private static readonly DistributedCacheEntryOptions Options = new()
+        { SlidingExpiration = TimeSpan.FromSeconds(10) };
 
     public OrderRepositoryDecorator(IOrderRepository ctx, IDistributedCache cache)
     {
